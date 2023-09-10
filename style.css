@@ -1,0 +1,348 @@
+.body{
+    font-family: 'poppins', 'sans serif';
+    
+    box-sizing: border-box;
+    
+}
+
+.background{
+    width: auto;
+    height: 600px;
+    background-image: url(Home.webp);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+ .heading h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw; /* Use vw (viewport width) unit for font size */
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    white-space: nowrap; /* Prevent text from breaking into two lines */
+}
+
+
+.heading p{
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+} 
+
+.List{
+    
+    list-style: none;
+    display: flex;
+    color: white;
+    gap: 40px;
+    font-size: 17px;
+    justify-content: center;
+}
+
+.heading li{
+    margin-top: 250px;
+}
+
+.Search {
+    position: absolute;
+    width: 60%; /* Use a percentage for width */
+    max-width: 550px; /* Set a maximum width to avoid excessive stretching */
+    padding: 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 100px;
+    left: 50%; /* Center horizontally */
+    top: 55%; /* Center vertically */
+    transform: translate(-50%, -55%); /* Center both horizontally and vertically */
+    overflow: hidden;
+}
+
+
+.listing h4{
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px; 
+    max-width: calc(33.33% - 80px); 
+    margin: 10px; 
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-body{
+    margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1080px) {
+    .row-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        flex: 1;
+        max-width: none;
+        width: 100%;
+    }
+}
+
+
+
+
+.row-2 h4{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.icon-square{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+.d-block{
+    width: 100%;
+    height: 50vw;
+}
+
+.carousel-caption h5{
+    font-size: 2vw;
+    font-weight: bold;
+    color: black;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.carousel-caption p{
+    font-family: 'poppins', 'sans-serif';
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.row-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center; 
+    margin-top: 40px;
+}
+
+.left-column {
+    
+    margin-left: 0%;
+    
+}
+
+.right-column h4{
+    font-family: 'poppins', 'sans-serif';
+    font-weight: bold;
+    font-size: 36px;
+    margin-left: 40px;
+    
+}
+
+.right-column p{
+    margin-left: 40px;
+    font-family: 'poppins', 'sans-serif';
+    font-size: 16px
+}
+
+#btn{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    border-radius: 100px;
+    font-family: 'poppins', 'sans-serif';
+    margin-left: 40px;
+}
+
+#btn:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+@media (max-width: 800px) {
+    .row-3{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-column{
+        margin-top: 20px;
+        margin-left:0%;
+        align-items: center;
+    }
+}
+
+.row-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.left-column-2{
+    margin-right: 90px;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.left-column-2 h4{
+    font-family: 'poppins', 'sans-serif';
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.left-column-2 p{
+    font-family: 'poppins', 'sans-serif';
+    font-size: 16px;
+}
+
+.local-info{
+    width: 60%; 
+    max-width: 550px; 
+    padding: 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 100px;  
+}
+
+@media (max-width: 800px){
+    .right-column-2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-column-2{
+        margin-top: 20px;
+        margin-left:0%;
+        align-items: center;
+    }
+}
+
+.popup{
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 300px;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    border: 1px solid black;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.popup:active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.popup .close-btn{
+    position: relative;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-weight: bold;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.popup .form .form-element{
+    margin: 15px 0px;
+}
+
+.form-element label{
+    color: #222;
+    font-size: 14px;
+}
+
+.form-element input[type="text"], 
+.form-element input[type="password"]{
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #222;
+    
+}
+
+
+
+.form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-element a{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+}
